@@ -1,0 +1,23 @@
+@mixin title-large {
+    font-size: 4em;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@mixin topic($color, $raio){
+    &::before{
+        content: '';
+        display: inline-block;
+        width: $raio;
+        height: $raio;
+        border-radius: 50%;
+        background: $color;
+        margin-right: 10px;
+    }
+}
+
+@mixin box-shadow($shadow...) {
+    box-shadow: $shadow;
+}

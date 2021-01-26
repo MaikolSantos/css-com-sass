@@ -1,1 +1,9 @@
-@import "p";
+@import "import"; //arquivo está importando estilos para <p>
+@import "nesting";
+
+$font: monospace;
+
+h1 {
+    text-align: center;
+    font-family: $font;
+}

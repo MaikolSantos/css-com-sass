@@ -1,0 +1,10 @@
+$container: 960; // não colocar px
+$gutter: 20; // não colocar px
+$colunas: 16;
+
+@for $i from 1 through $colunas {
+    $width: $container / $colunas * $i - $gutter;
+    .grid-#{$i} {
+        width: $width + px; //somar px
+    } 
+}

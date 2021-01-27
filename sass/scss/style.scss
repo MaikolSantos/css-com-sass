@@ -1,6 +1,7 @@
 @import "import"; //arquivo está importando estilos para <p>
 @import "nesting";
 @import "mixin";
+@import "condicionais";
 
 $font: monospace;
 
@@ -16,4 +17,9 @@ p.large {
     @include box-shadow(5px 5px 2px rgba(0, 0, 0, .7),
                         10px 10px 1px rgba(0, 0, 0, .5),
                         15px 15px 0px rgba(0, 0, 0, .2),);
+}
+
+p.condicionais {
+    color: $primary-color;
+    background: $second-color;
 }

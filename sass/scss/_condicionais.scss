@@ -1,0 +1,11 @@
+$tema: oceano;
+$primary-color: black;
+$second-color: gray;
+
+@if $tema == oceano {
+    $primary-color: blue;
+    $second-color: orange;
+} @else if $tema == deserto {
+    $primary-color: yellow;
+    $second-color: purple;
+}

@@ -59,3 +59,8 @@ p.large::before {
   background: #3156c7;
   margin-right: 10px;
 }
+
+p.condicionais {
+  color: blue;
+  background: orange;
+}

@@ -1,3 +1,13 @@
+// com %
+$col: 16;
+
+@for $i from 1 through $col {
+    $width: $i / $col * 100%;
+    .porcentage-#{$i} {
+        width: $width;
+    } 
+}
+// com px
 $container: 960; // não colocar px
 $gutter: 20; // não colocar px
 $colunas: 16;
